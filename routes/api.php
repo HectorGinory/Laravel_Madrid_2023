@@ -21,9 +21,11 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/health', function () {
+    return 'healthy';
+});
+Route::get('/', function () {
     return 'Bienvenido a mi app';
 });
-
 // TASKS
 Route::group(
     [
